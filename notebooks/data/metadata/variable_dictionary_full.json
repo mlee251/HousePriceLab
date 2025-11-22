@@ -1,0 +1,1284 @@
+{
+    "Order": {
+        "meaning": "Row Order",
+        "description": "Row number indicating the observation order in the original dataset.",
+        "semantic_group": "id",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 2930,
+        "example_values": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    },
+    "PID": {
+        "meaning": "Parcel Identification Number",
+        "description": "Unique identifier assigned to each property parcel.",
+        "semantic_group": "id",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 2930,
+        "example_values": [
+            526301100,
+            526350040,
+            526351010,
+            526353030,
+            527105010
+        ]
+    },
+    "MS SubClass": {
+        "meaning": "Building Class",
+        "description": "Identifies the type of dwelling (e.g., 1-story, 2-story, split-level).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 16,
+        "example_values": [
+            20,
+            60,
+            120,
+            50,
+            85
+        ]
+    },
+    "MS Zoning": {
+        "meaning": "Zoning Classification",
+        "description": "General zoning classification of the property (e.g., residential, commercial).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 7,
+        "example_values": [
+            "RL",
+            "RH",
+            "FV",
+            "RM",
+            "C (all)"
+        ]
+    },
+    "Lot Frontage": {
+        "meaning": "Lot Frontage",
+        "description": "Linear feet of street connected to the property.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 490,
+        "missing_pct": 16.724,
+        "n_unique": 128,
+        "example_values": [
+            141.0,
+            80.0,
+            81.0,
+            93.0,
+            74.0
+        ]
+    },
+    "Lot Area": {
+        "meaning": "Lot Area",
+        "description": "Total square footage of the lot.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 1960,
+        "example_values": [
+            31770,
+            11622,
+            14267,
+            11160,
+            13830
+        ]
+    },
+    "Street": {
+        "meaning": "Street Type",
+        "description": "Type of street access (paved, gravel, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 2,
+        "example_values": [
+            "Pave",
+            "Grvl"
+        ]
+    },
+    "Alley": {
+        "meaning": "Alley Access",
+        "description": "Type of alley access to the property.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 2732,
+        "missing_pct": 93.242,
+        "n_unique": 2,
+        "example_values": [
+            "Pave",
+            "Grvl"
+        ]
+    },
+    "Lot Shape": {
+        "meaning": "Lot Shape",
+        "description": "Overall shape of the property (regular, irregular, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 4,
+        "example_values": [
+            "IR1",
+            "Reg",
+            "IR2",
+            "IR3"
+        ]
+    },
+    "Land Contour": {
+        "meaning": "Land Contour",
+        "description": "Flatness and general contour of the property.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 4,
+        "example_values": [
+            "Lvl",
+            "HLS",
+            "Bnk",
+            "Low"
+        ]
+    },
+    "Utilities": {
+        "meaning": "Utilities",
+        "description": "Type of utilities available (gas, electricity, sewage).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 3,
+        "example_values": [
+            "AllPub",
+            "NoSewr",
+            "NoSeWa"
+        ]
+    },
+    "Lot Config": {
+        "meaning": "Lot Configuration",
+        "description": "Property configuration (inside lot, corner lot, cul-de-sac, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            "Corner",
+            "Inside",
+            "CulDSac",
+            "FR2",
+            "FR3"
+        ]
+    },
+    "Land Slope": {
+        "meaning": "Land Slope",
+        "description": "Slope of the property (gentle, moderate, severe).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 3,
+        "example_values": [
+            "Gtl",
+            "Mod",
+            "Sev"
+        ]
+    },
+    "Neighborhood": {
+        "meaning": "Neighborhood",
+        "description": "Physical location within the city of Ames.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 28,
+        "example_values": [
+            "NAmes",
+            "Gilbert",
+            "StoneBr",
+            "NWAmes",
+            "Somerst"
+        ]
+    },
+    "Condition 1": {
+        "meaning": "Primary Proximity Condition",
+        "description": "Proximity to main road, railroad, or other environmental factors.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 9,
+        "example_values": [
+            "Norm",
+            "Feedr",
+            "PosN",
+            "RRNe",
+            "RRAe"
+        ]
+    },
+    "Condition 2": {
+        "meaning": "Secondary Proximity Condition",
+        "description": "Secondary proximity to environmental features.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 8,
+        "example_values": [
+            "Norm",
+            "Feedr",
+            "PosA",
+            "PosN",
+            "Artery"
+        ]
+    },
+    "Bldg Type": {
+        "meaning": "Building Type",
+        "description": "Type of dwelling (single-family, duplex, townhouse, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            "1Fam",
+            "TwnhsE",
+            "Twnhs",
+            "Duplex",
+            "2fmCon"
+        ]
+    },
+    "House Style": {
+        "meaning": "House Style",
+        "description": "Architectural style of the dwelling (1-story, 2-story, split-level, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 8,
+        "example_values": [
+            "1Story",
+            "2Story",
+            "1.5Fin",
+            "SFoyer",
+            "SLvl"
+        ]
+    },
+    "Overall Qual": {
+        "meaning": "Overall Quality",
+        "description": "Overall material and finish quality, rated from 1 (lowest) to 10 (highest).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 10,
+        "example_values": [
+            6,
+            5,
+            7,
+            8,
+            9
+        ]
+    },
+    "Overall Cond": {
+        "meaning": "Overall Condition",
+        "description": "Overall physical condition of the house, rated from 1 (poor) to 10 (excellent).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 9,
+        "example_values": [
+            5,
+            6,
+            7,
+            2,
+            8
+        ]
+    },
+    "Year Built": {
+        "meaning": "Construction Year",
+        "description": "Original construction year of the property.",
+        "semantic_group": "temporal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 118,
+        "example_values": [
+            1960,
+            1961,
+            1958,
+            1968,
+            1997
+        ]
+    },
+    "Year Remod/Add": {
+        "meaning": "Remodel Year",
+        "description": "Year of last remodeling or addition; same as Year Built if no remodeling occurred.",
+        "semantic_group": "temporal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 61,
+        "example_values": [
+            1960,
+            1961,
+            1958,
+            1968,
+            1998
+        ]
+    },
+    "Roof Style": {
+        "meaning": "Roof Style",
+        "description": "Type of roof design (gable, hip, flat, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 6,
+        "example_values": [
+            "Hip",
+            "Gable",
+            "Mansard",
+            "Gambrel",
+            "Shed"
+        ]
+    },
+    "Roof Matl": {
+        "meaning": "Roof Material",
+        "description": "Primary roof covering material.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 8,
+        "example_values": [
+            "CompShg",
+            "WdShake",
+            "Tar&Grv",
+            "WdShngl",
+            "Membran"
+        ]
+    },
+    "Exterior 1st": {
+        "meaning": "Exterior Covering (Primary)",
+        "description": "Primary exterior material covering the house.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 16,
+        "example_values": [
+            "BrkFace",
+            "VinylSd",
+            "Wd Sdng",
+            "CemntBd",
+            "HdBoard"
+        ]
+    },
+    "Exterior 2nd": {
+        "meaning": "Exterior Covering (Secondary)",
+        "description": "Secondary exterior material (if multiple materials are used).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 17,
+        "example_values": [
+            "Plywood",
+            "VinylSd",
+            "Wd Sdng",
+            "BrkFace",
+            "CmentBd"
+        ]
+    },
+    "Mas Vnr Type": {
+        "meaning": "Masonry Veneer Type",
+        "description": "Type of masonry veneer applied to the exterior.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 1775,
+        "missing_pct": 60.58,
+        "n_unique": 4,
+        "example_values": [
+            "Stone",
+            "BrkFace",
+            "BrkCmn",
+            "CBlock"
+        ]
+    },
+    "Mas Vnr Area": {
+        "meaning": "Masonry Veneer Area",
+        "description": "Area of masonry veneer in square feet.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 23,
+        "missing_pct": 0.785,
+        "n_unique": 445,
+        "example_values": [
+            112.0,
+            0.0,
+            108.0,
+            20.0,
+            603.0
+        ]
+    },
+    "Exter Qual": {
+        "meaning": "Exterior Quality",
+        "description": "Quality of the material on the exterior (ordinal: Po < Fa < TA < Gd < Ex).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 4,
+        "example_values": [
+            "TA",
+            "Gd",
+            "Ex",
+            "Fa"
+        ]
+    },
+    "Exter Cond": {
+        "meaning": "Exterior Condition",
+        "description": "Condition of the exterior material (ordinal scale).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            "TA",
+            "Gd",
+            "Fa",
+            "Po",
+            "Ex"
+        ]
+    },
+    "Foundation": {
+        "meaning": "Foundation Type",
+        "description": "Type of foundation (crawl space, slab, basement, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 6,
+        "example_values": [
+            "CBlock",
+            "PConc",
+            "Wood",
+            "BrkTil",
+            "Slab"
+        ]
+    },
+    "Bsmt Qual": {
+        "meaning": "Basement Quality",
+        "description": "Height and quality of the basement (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 80,
+        "missing_pct": 2.73,
+        "n_unique": 5,
+        "example_values": [
+            "TA",
+            "Gd",
+            "Ex",
+            "Fa",
+            "Po"
+        ]
+    },
+    "Bsmt Cond": {
+        "meaning": "Basement Condition",
+        "description": "Overall condition of the basement (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 80,
+        "missing_pct": 2.73,
+        "n_unique": 5,
+        "example_values": [
+            "Gd",
+            "TA",
+            "Po",
+            "Fa",
+            "Ex"
+        ]
+    },
+    "Bsmt Exposure": {
+        "meaning": "Basement Exposure",
+        "description": "Walkout or garden-level basement exposure (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 83,
+        "missing_pct": 2.833,
+        "n_unique": 4,
+        "example_values": [
+            "Gd",
+            "No",
+            "Mn",
+            "Av"
+        ]
+    },
+    "BsmtFin Type 1": {
+        "meaning": "Basement Finish Type 1",
+        "description": "Primary basement finished area rating (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 80,
+        "missing_pct": 2.73,
+        "n_unique": 6,
+        "example_values": [
+            "BLQ",
+            "Rec",
+            "ALQ",
+            "GLQ",
+            "Unf"
+        ]
+    },
+    "BsmtFin SF 1": {
+        "meaning": "Basement Finished Sq Ft 1",
+        "description": "Finished square footage of primary basement area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 995,
+        "example_values": [
+            639.0,
+            468.0,
+            923.0,
+            1065.0,
+            791.0
+        ]
+    },
+    "BsmtFin Type 2": {
+        "meaning": "Basement Finish Type 2",
+        "description": "Secondary finished area rating (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 81,
+        "missing_pct": 2.765,
+        "n_unique": 6,
+        "example_values": [
+            "Unf",
+            "LwQ",
+            "BLQ",
+            "Rec",
+            "GLQ"
+        ]
+    },
+    "BsmtFin SF 2": {
+        "meaning": "Basement Finished Sq Ft 2",
+        "description": "Finished square footage of secondary basement area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 274,
+        "example_values": [
+            0.0,
+            144.0,
+            1120.0,
+            163.0,
+            168.0
+        ]
+    },
+    "Bsmt Unf SF": {
+        "meaning": "Basement Unfinished Area",
+        "description": "Unfinished square footage of the basement.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 1137,
+        "example_values": [
+            441.0,
+            270.0,
+            406.0,
+            1045.0,
+            137.0
+        ]
+    },
+    "Total Bsmt SF": {
+        "meaning": "Total Basement Area",
+        "description": "Total square footage of the basement (finished + unfinished).",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 1058,
+        "example_values": [
+            1080.0,
+            882.0,
+            1329.0,
+            2110.0,
+            928.0
+        ]
+    },
+    "Heating": {
+        "meaning": "Heating System",
+        "description": "Type of heating installed in the property.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 6,
+        "example_values": [
+            "GasA",
+            "GasW",
+            "Grav",
+            "Wall",
+            "Floor"
+        ]
+    },
+    "Heating QC": {
+        "meaning": "Heating Quality and Condition",
+        "description": "Quality and condition of the heating system (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            "Fa",
+            "TA",
+            "Ex",
+            "Gd",
+            "Po"
+        ]
+    },
+    "Central Air": {
+        "meaning": "Central Air Conditioning",
+        "description": "Whether the house has central AC (Y/N).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 2,
+        "example_values": [
+            "Y",
+            "N"
+        ]
+    },
+    "Electrical": {
+        "meaning": "Electrical System",
+        "description": "Electrical wiring type.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 5,
+        "example_values": [
+            "SBrkr",
+            "FuseA",
+            "FuseF",
+            "FuseP",
+            "Mix"
+        ]
+    },
+    "1st Flr SF": {
+        "meaning": "First Floor Area",
+        "description": "Square footage of the first floor.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 1083,
+        "example_values": [
+            1656,
+            896,
+            1329,
+            2110,
+            928
+        ]
+    },
+    "2nd Flr SF": {
+        "meaning": "Second Floor Area",
+        "description": "Square footage of the second floor.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 635,
+        "example_values": [
+            0,
+            701,
+            678,
+            776,
+            892
+        ]
+    },
+    "Low Qual Fin SF": {
+        "meaning": "Low Quality Finished Area",
+        "description": "Finished area of low quality (all floors).",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 36,
+        "example_values": [
+            0,
+            390,
+            362,
+            144,
+            1064
+        ]
+    },
+    "Gr Liv Area": {
+        "meaning": "Ground Living Area",
+        "description": "Above-ground living area in square feet.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 1292,
+        "example_values": [
+            1656,
+            896,
+            1329,
+            2110,
+            1629
+        ]
+    },
+    "Bsmt Full Bath": {
+        "meaning": "Basement Full Bathrooms",
+        "description": "Number of full bathrooms located in the basement.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "float64",
+        "n_missing": 2,
+        "missing_pct": 0.068,
+        "n_unique": 4,
+        "example_values": [
+            1.0,
+            0.0,
+            2.0,
+            3.0
+        ]
+    },
+    "Bsmt Half Bath": {
+        "meaning": "Basement Half Bathrooms",
+        "description": "Number of half bathrooms located in the basement.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "float64",
+        "n_missing": 2,
+        "missing_pct": 0.068,
+        "n_unique": 3,
+        "example_values": [
+            0.0,
+            1.0,
+            2.0
+        ]
+    },
+    "Full Bath": {
+        "meaning": "Full Bathrooms (Above Grade)",
+        "description": "Number of full bathrooms above grade.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            1,
+            2,
+            3,
+            0,
+            4
+        ]
+    },
+    "Half Bath": {
+        "meaning": "Half Bathrooms (Above Grade)",
+        "description": "Number of half bathrooms above grade.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 3,
+        "example_values": [
+            0,
+            1,
+            2
+        ]
+    },
+    "Bedroom AbvGr": {
+        "meaning": "Bedrooms Above Grade",
+        "description": "Number of bedrooms located above ground level.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 8,
+        "example_values": [
+            3,
+            2,
+            1,
+            4,
+            6
+        ]
+    },
+    "Kitchen AbvGr": {
+        "meaning": "Kitchens Above Grade",
+        "description": "Number of kitchens located above ground level.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 4,
+        "example_values": [
+            1,
+            2,
+            3,
+            0
+        ]
+    },
+    "Kitchen Qual": {
+        "meaning": "Kitchen Quality",
+        "description": "Quality of the kitchen (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            "TA",
+            "Gd",
+            "Ex",
+            "Fa",
+            "Po"
+        ]
+    },
+    "TotRms AbvGrd": {
+        "meaning": "Total Rooms Above Grade",
+        "description": "Total number of rooms above grade, excluding bathrooms.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 14,
+        "example_values": [
+            7,
+            5,
+            6,
+            8,
+            4
+        ]
+    },
+    "Functional": {
+        "meaning": "Home Functionality",
+        "description": "Overall functionality of the home (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 8,
+        "example_values": [
+            "Typ",
+            "Mod",
+            "Min1",
+            "Min2",
+            "Maj1"
+        ]
+    },
+    "Fireplaces": {
+        "meaning": "Fireplaces",
+        "description": "Number of fireplaces in the property.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            2,
+            0,
+            1,
+            3,
+            4
+        ]
+    },
+    "Fireplace Qu": {
+        "meaning": "Fireplace Quality",
+        "description": "Quality of the fireplace (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 1422,
+        "missing_pct": 48.532,
+        "n_unique": 5,
+        "example_values": [
+            "Gd",
+            "TA",
+            "Po",
+            "Ex",
+            "Fa"
+        ]
+    },
+    "Garage Type": {
+        "meaning": "Garage Location",
+        "description": "Location of the garage relative to the home.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 157,
+        "missing_pct": 5.358,
+        "n_unique": 6,
+        "example_values": [
+            "Attchd",
+            "BuiltIn",
+            "Basment",
+            "Detchd",
+            "CarPort"
+        ]
+    },
+    "Garage Yr Blt": {
+        "meaning": "Garage Construction Year",
+        "description": "Original year the garage was constructed.",
+        "semantic_group": "temporal",
+        "pandas_dtype": "float64",
+        "n_missing": 159,
+        "missing_pct": 5.427,
+        "n_unique": 103,
+        "example_values": [
+            1960.0,
+            1961.0,
+            1958.0,
+            1968.0,
+            1997.0
+        ]
+    },
+    "Garage Finish": {
+        "meaning": "Garage Interior Finish",
+        "description": "Interior finish of the garage (finished, unfinished, rough).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 159,
+        "missing_pct": 5.427,
+        "n_unique": 3,
+        "example_values": [
+            "Fin",
+            "Unf",
+            "RFn"
+        ]
+    },
+    "Garage Cars": {
+        "meaning": "Garage Capacity",
+        "description": "Number of cars the garage can accommodate.",
+        "semantic_group": "numeric_discrete",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 6,
+        "example_values": [
+            2.0,
+            1.0,
+            3.0,
+            0.0,
+            4.0
+        ]
+    },
+    "Garage Area": {
+        "meaning": "Garage Area",
+        "description": "Square footage of the garage.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "float64",
+        "n_missing": 1,
+        "missing_pct": 0.034,
+        "n_unique": 603,
+        "example_values": [
+            528.0,
+            730.0,
+            312.0,
+            522.0,
+            482.0
+        ]
+    },
+    "Garage Qual": {
+        "meaning": "Garage Quality",
+        "description": "Quality of the garage (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 159,
+        "missing_pct": 5.427,
+        "n_unique": 5,
+        "example_values": [
+            "TA",
+            "Fa",
+            "Gd",
+            "Ex",
+            "Po"
+        ]
+    },
+    "Garage Cond": {
+        "meaning": "Garage Condition",
+        "description": "Condition of the garage (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 159,
+        "missing_pct": 5.427,
+        "n_unique": 5,
+        "example_values": [
+            "TA",
+            "Fa",
+            "Gd",
+            "Ex",
+            "Po"
+        ]
+    },
+    "Paved Drive": {
+        "meaning": "Paved Driveway",
+        "description": "Whether the driveway is paved (Y/N/P).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 3,
+        "example_values": [
+            "P",
+            "Y",
+            "N"
+        ]
+    },
+    "Wood Deck SF": {
+        "meaning": "Wood Deck Area",
+        "description": "Square footage of wood deck area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 380,
+        "example_values": [
+            210,
+            140,
+            393,
+            0,
+            212
+        ]
+    },
+    "Open Porch SF": {
+        "meaning": "Open Porch Area",
+        "description": "Square footage of the open porch.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 252,
+        "example_values": [
+            62,
+            0,
+            36,
+            34,
+            82
+        ]
+    },
+    "Enclosed Porch": {
+        "meaning": "Enclosed Porch Area",
+        "description": "Square footage of enclosed porch area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 183,
+        "example_values": [
+            0,
+            170,
+            184,
+            154,
+            80
+        ]
+    },
+    "3Ssn Porch": {
+        "meaning": "Three-Season Porch Area",
+        "description": "Square footage of three-season porch area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 31,
+        "example_values": [
+            0,
+            238,
+            224,
+            144,
+            508
+        ]
+    },
+    "Screen Porch": {
+        "meaning": "Screen Porch Area",
+        "description": "Square footage of screened porch area.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 121,
+        "example_values": [
+            0,
+            120,
+            144,
+            140,
+            210
+        ]
+    },
+    "Pool Area": {
+        "meaning": "Pool Area",
+        "description": "Total pool area in square feet.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 14,
+        "example_values": [
+            0,
+            144,
+            480,
+            576,
+            555
+        ]
+    },
+    "Pool QC": {
+        "meaning": "Pool Quality",
+        "description": "Quality of the pool (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 2917,
+        "missing_pct": 99.556,
+        "n_unique": 4,
+        "example_values": [
+            "Ex",
+            "Gd",
+            "TA",
+            "Fa"
+        ]
+    },
+    "Fence": {
+        "meaning": "Fence Quality",
+        "description": "Quality of the fence (ordinal).",
+        "semantic_group": "categorical_ordinal",
+        "pandas_dtype": "object",
+        "n_missing": 2358,
+        "missing_pct": 80.478,
+        "n_unique": 4,
+        "example_values": [
+            "MnPrv",
+            "GdPrv",
+            "GdWo",
+            "MnWw"
+        ]
+    },
+    "Misc Feature": {
+        "meaning": "Miscellaneous Feature",
+        "description": "Miscellaneous feature not covered in other categories.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 2824,
+        "missing_pct": 96.382,
+        "n_unique": 5,
+        "example_values": [
+            "Gar2",
+            "Shed",
+            "Othr",
+            "Elev",
+            "TenC"
+        ]
+    },
+    "Misc Val": {
+        "meaning": "Miscellaneous Value",
+        "description": "Value of the miscellaneous feature in USD.",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 38,
+        "example_values": [
+            0,
+            12500,
+            500,
+            700,
+            400
+        ]
+    },
+    "Mo Sold": {
+        "meaning": "Month Sold",
+        "description": "Month the property was sold.",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 12,
+        "example_values": [
+            5,
+            6,
+            4,
+            3,
+            1
+        ]
+    },
+    "Yr Sold": {
+        "meaning": "Year Sold",
+        "description": "Year the property was sold.",
+        "semantic_group": "temporal",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 5,
+        "example_values": [
+            2010,
+            2009,
+            2008,
+            2007,
+            2006
+        ]
+    },
+    "Sale Type": {
+        "meaning": "Sale Type",
+        "description": "Type of sale (normal, auction, family, etc.).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 10,
+        "example_values": [
+            "WD ",
+            "New",
+            "COD",
+            "ConLI",
+            "Con"
+        ]
+    },
+    "Sale Condition": {
+        "meaning": "Sale Condition",
+        "description": "Condition of the sale (normal, partial, abnormal).",
+        "semantic_group": "categorical_nominal",
+        "pandas_dtype": "object",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 6,
+        "example_values": [
+            "Normal",
+            "Partial",
+            "Family",
+            "Abnorml",
+            "Alloca"
+        ]
+    },
+    "SalePrice": {
+        "meaning": "Sale Price",
+        "description": "Final sale price of the property in USD (this is the target variable).",
+        "semantic_group": "numeric_continuous",
+        "pandas_dtype": "int64",
+        "n_missing": 0,
+        "missing_pct": 0.0,
+        "n_unique": 1032,
+        "example_values": [
+            215000,
+            105000,
+            172000,
+            244000,
+            189900
+        ]
+    }
+}
