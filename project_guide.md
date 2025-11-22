@@ -5,19 +5,19 @@ Use this document to monitor progress and ensure each phase is completed to prof
 ---
 
 ## 1. Define Questions and Hypotheses  
-**[ ] Phase 1 Complete**
+**[x] Phase 1 Complete**
 
 ### Tasks  
-- [ ] Identify the core research question  
-- [ ] Translate the question into measurable variables  
-- [ ] Define primary and secondary hypotheses  
-- [ ] Specify expected relationships (direction, rationale)  
-- [ ] Document assumptions and contextual background  
+- [x] Identify the core research question  
+- [x] Translate the question into measurable variables  
+- [x] Define primary and secondary hypotheses  
+- [x] Specify expected relationships (direction, rationale)  
+- [x] Document assumptions and contextual background  
 
 ### Deliverables  
-- [ ] Research questions section written  
-- [ ] List of hypotheses (H1, H2, …)  
-- [ ] Rationale for each hypothesis  
+- [x] Research questions section written  
+- [x] List of hypotheses (H1, H2, …)  
+- [x] Rationale for each hypothesis  
 
 ### Done When  
 - All hypotheses are clear, measurable, and falsifiable.
@@ -25,14 +25,14 @@ Use this document to monitor progress and ensure each phase is completed to prof
 ---
 
 ## 2. Collect and Understand the Data  
-**[ ] Phase 2 Complete**
+**[x] Phase 2 Complete**
 
 ### Tasks  
-- [ ] Download the Ames Housing Dataset  
-- [ ] Document data source and licensing  
-- [ ] Inspect all columns and data types  
-- [ ] Describe each variable in plain language  
-- [ ] Identify missing values and data constraints  
+- [x] Download the Ames Housing Dataset  
+- [x] Document data source and licensing  
+- [x] Inspect all columns and data types  
+- [x] Describe each variable in plain language  
+- [x] Identify missing values and data constraints  
 
 ### Deliverables  
 - [ ] Data dictionary  
